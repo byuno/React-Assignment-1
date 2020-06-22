@@ -4,12 +4,14 @@ import UserInput from './Components/UserInput'
 import UserOutput from './Components/UserOutput'
 
 function App() {
+
+
   return (
     <div className="App">
       <h1> Assignment 1 </h1>
-      <UserOutput/>
-      <UserOutput/>
-      <UserOutput/>
+      <UserOutput name="John"/>
+      <UserOutput name="Jane"/>
+      <UserOutput name="Jerry"/>
 
     </div>
   );
