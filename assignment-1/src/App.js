@@ -17,8 +17,11 @@ class App extends Component {
   render() {
 
     const style = {
-      border: '1px solid black',
+      border: '10px solid black',
       padding: '10px',
+      backgroundColor: 'chartreuse',
+      width: '90%',
+      postion: 'relative'
     }
 
     return (
@@ -27,12 +30,9 @@ class App extends Component {
         <UserInput 
           changed={ this.changeUsernameHandler }
           currentName={ this.state.username }/>
-        <UserOutput 
-       
-        userName={ this.state.username }/>
         <UserOutput userName={ this.state.username }/>
         <UserOutput userName={ this.state.username }/>
-
+        <UserOutput userName={ this.state.username }/>
       </div>
     );
   }
