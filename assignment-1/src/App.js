@@ -15,15 +15,23 @@ class App extends Component {
   }
 
   render() {
+
+    const style = {
+      border: '1px solid black',
+      padding: '10px',
+    }
+
     return (
       <div className="App">
-        <h1> Assignment 1 </h1>
+        <h1 style={ style }> Assignment 1 </h1>
         <UserInput 
-          changed={this.changeUsernameHandler}
-          currentName={this.state.username}/>
-        <UserOutput userName={this.state.username }/>
-        <UserOutput userName={this.state.username }/>
-        <UserOutput userName={this.state.username } />
+          changed={ this.changeUsernameHandler }
+          currentName={ this.state.username }/>
+        <UserOutput 
+       
+        userName={ this.state.username }/>
+        <UserOutput userName={ this.state.username }/>
+        <UserOutput userName={ this.state.username }/>
 
       </div>
     );
